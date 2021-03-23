@@ -399,7 +399,8 @@ include_once ('Model1/GetReportRequestListResponse.php');
 /////very important thing//////////////////////////////////////
 ////get seller name from command line parameters
 ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////
+//////////////////////////////
+/////////////////////////////////
 $options = getopt("a:");
 $sellerName=$options['a'];
 ///////////////////////////////////////////////////////////////
@@ -413,15 +414,15 @@ if(preg_match_all("{CronRepricer\.php -a ($sellerName)}si",$src,$matches,PREG_SE
 	}
 	if($countOfProcess>2){
 			//echo "$CurDate, stoped CronRepricer, detected more than 1 process, exit";
-			//mail("yurik205@ya.ru","CronRepricer","$CurDate, stoped CronRepricer, detected more than 1 process, exit");
+			//mail("email@ya.ru","CronRepricer","$CurDate, stoped CronRepricer, detected more than 1 process, exit");
 			exit;
 		}else{
 			//echo "$CurDate, CronRepricer checks and it's no working, continue of repricer works";
-			//mail("yurik205@ya.ru","CronRepricer","$CurDate, CronRepricer checks and it's no working, continue of repricer works");
+			//mail("email@ya.ru","CronRepricer","$CurDate, CronRepricer checks and it's no working, continue of repricer works");
 		}
 }else{
 	//echo "$CurDate, not found CronRepricer.php, start the repricer works \n[$sellerName]\n $src \n";
-	//mail("yurik205@ya.ru","CronRepricer","$CurDate, not found CronRepricer, start the repricer works");
+	//mail("email@ya.ru","CronRepricer","$CurDate, not found CronRepricer, start the repricer works");
 }
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////

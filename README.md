@@ -1,2 +1,2 @@
 # AmazonRepricer
-Amazon Repricer Demo PHP script maden in 2013 using Amazon MWS API
+Amazon Repricer Demo PHP script maden in 2012 using Amazon MWS API
